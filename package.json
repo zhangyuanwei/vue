@@ -20,6 +20,7 @@
     "dev:compiler": "rollup -w -c build/config.js --environment TARGET:web-compiler ",
     "dev:weex": "rollup -w -c build/config.js --environment TARGET:weex-framework ",
     "dev:weex:compiler": "rollup -w -c build/config.js --environment TARGET:weex-compiler ",
+    "dev:vip:compiler": "rollup -w -c build/config.js --environment TARGET:vip-compiler ",
     "build": "node build/build.js",
     "build:ssr": "npm run build -- vue.runtime.common.js,vue-server-renderer",
     "build:weex": "npm run build -- weex-vue-framework,weex-template-compiler",

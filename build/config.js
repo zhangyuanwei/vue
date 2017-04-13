@@ -95,6 +95,13 @@ const builds = {
     format: 'cjs',
     external: Object.keys(require('../packages/vue-template-compiler/package.json').dependencies)
   },
+  // PHP compiler (CommonJS).
+  'vip-compiler': {
+    entry: path.resolve(__dirname, '../src/entries/vip-compiler.js'),
+    dest: path.resolve(__dirname, '../packages/vip-template-compiler/build.js'),
+    format: 'cjs',
+    external: Object.keys(require('../packages/vip-template-compiler/package.json').dependencies)
+  },
   // Web server renderer (CommonJS).
   'web-server-renderer': {
     entry: path.resolve(__dirname, '../src/entries/web-server-renderer.js'),
